@@ -1,0 +1,60 @@
+/* Table Image */
+.parent{
+    background-color: rgb(32, 25, 25);
+    height: 40rem;
+    padding-top: 2rem;
+  }
+  
+  /* Table Cells */
+  table tr td {
+    border: 1px solid white; /* White border */
+    padding: 20px 40px;
+  text-align: center;
+    background: rgb(91, 85, 85);
+    color: rgb(234, 233, 233);
+  }
+  
+  /* Table Header */
+  th {
+    border: 1px solid white; /* White border */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #333333; /* Dark gray background for header */
+  text-align: center;
+    color: white; /* White text color */
+  }
+  
+  /* Centered Content */
+  .centered {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+  
+  /* Material Icon Styling */
+  .mat-icon {
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: white;
+  }
+
+
+/* tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0px;
+}
+table tr td{
+        padding: 10px
+}
+.payment-tab {
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+    padding: 20px;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+} */

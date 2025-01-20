@@ -1,0 +1,76 @@
+/* Table Image */
+table tr td img {
+    height: 150px;
+    width: 200px;
+    margin: 1rem;
+}
+.parent{
+    background-color: rgb(32, 25, 25);
+}
+
+/* Table Cells */
+table tr td {
+    border: 1px solid white; /* White border */
+    padding: 5px 20px;
+text-align: center;
+    background: rgb(91, 85, 85);
+    color: rgb(234, 233, 233);
+}
+
+/* Table Header */
+th {
+    border: 1px solid white; /* White border */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #333333; /* Dark gray background for header */
+text-align: center;
+    color: white; /* White text color */
+}
+
+/* Centered Content */
+.centered {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+/* Material Icon Styling */
+.mat-icon {
+    font-size: 40px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: white;
+}
+
+
+/* 
+
+
+ 
+
+ table tr td img{
+   
+    height:200px;
+    width:200px;
+
+}
+table tr td {
+    border: solid black;
+    padding: 5px 20px;
+}
+
+th{
+    border: solid black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.centered {
+    display: flex;
+    justify-content: center;
+}
+.mat-icon {
+    font-size: 40px;
+    height: 40px ;
+    width: 40px;
+    cursor: pointer;
+    color: #7b3b1e;
+}  */

@@ -1,0 +1,67 @@
+<div class="order-home">
+    <!-- Category Selector -->
+    <div class="centered">
+      <label for="category" class="label">Select Category:</label>
+      <select id="category" [(ngModel)]="category" (change)="getProductByCategory()" class="select-box">
+        <option [value]="100">All</option>
+        <option *ngFor="let item of getCategoryList" [value]="item?.value">{{ item?.name }}</option>
+      </select>
+    </div>
+  
+    <!-- Spacing -->
+    <div class="spacer"></div>
+  
+    <!-- Product List -->
+    <div class="centered">
+      <div *ngIf="productList.length === 0" class="no-products">
+        No product is available in the list.
+      </div>
+      <div *ngIf="productList.length > 0" class="table-wrapper">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product Id</th>
+              <th>Product Name</th>
+              <th>Product Description</th>
+              <th>Product Image</th>
+              <th>Product MRP</th>
+              <th>Available Quantity</th>
+              <th>Order Quantity</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let product of productList">
+              <td>{{ product?.productId }}</td>
+              <td>{{ product?.productname }}</td>
+              <td>{{ product?.description }}</td>
+              <td>
+                <img [src]="'assets/Images/' + product?.image" alt="Product Image" class="product-img" />
+              </td>
+              <td>{{ product?.mrpPrice }}</td>
+              <td>{{ product?.quantity }}</td>
+              <td>
+                <input type="text" [id]="product?.productId" class="order-quantity" />
+              </td>
+              <td>
+                <button (click)="addToCart(product)" class="btn primary-btn">Add to Cart</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <!-- Pagination -->
+    <div *ngIf="productList.length > 0" class="centered pagination-wrapper">
+      <app-paging
+        [totalItem]="totalItem"
+        [pageSize]="pageSize"
+        [offset]="offset"
+        (onNextPageClick)="onNextPageClick($event)"
+        (onPreviousPageClick)="onPreviousPageClick($event)"
+        (onFirstPageClick)="onFirstPageClick($event)"
+        (onLastPageClick)="onLastPageClick($event)"
+      ></app-paging>
+    </div>
+  </div>

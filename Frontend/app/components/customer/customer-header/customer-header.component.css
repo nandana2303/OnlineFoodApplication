@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background for the entire page */
+    color: #FFFFFF; /* White text for contrast */
+    font-family: Arial, sans-serif; /* Modern and clean font */
+}
+
+/* Main Navbar Container */
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #000000; /* Black navbar */
+    color: #FFFFFF; /* White text */
+    padding: 0 20px; /* Padding for spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+
+/* Navbar Logo */
+.main img {
+    height: 50px;
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Prevents distortion */
+}
+
+/* Navbar Items */
+.main div {
+    cursor: pointer;
+    padding: 10px 15px;
+    text-transform: uppercase; /* Uniform look for text */
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Highlight Selected Navbar Item */
+.main > .selected {
+    background: maroon; /* Maroon for selected item */
+    border-radius: 4px; /* Slightly rounded edges */
+    font-weight: bold;
+}
+
+/* Hover Effect for Navbar Items */
+.main div:hover {
+    background-color: #333333; /* Dark gray hover effect */
+    color: #FFD700; /* Golden text color on hover */
+    border-radius: 4px;
+}
+
+/* User Name and Dropdown Menu */
+.user-name-item {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between username and icon */
+}
+
+.user-name-item mat-icon {
+    font-size: 20px; /* Adjust icon size */
+}
+
+/* Subtle Focus and Hover for Menu Items */
+mat-menu button:hover {
+    background-color: #333333;
+    color: #FFD700;
+}
+
+/* Accessibility Enhancements */
+button, div {
+    outline: none; /* Removes default focus outline */
+}
+

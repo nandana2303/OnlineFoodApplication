@@ -1,0 +1,73 @@
+/* General Page Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c; /* Matches black navbar theme */
+  color: #ffffff; /* White text for contrast */
+}
+
+.contact-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-section {
+  text-align: center;
+  padding: 30px 20px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.contact-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #e6b800; /* Gold for emphasis */
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.contact-info {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  background-color: #2a2a2a; /* Dark gray cards for contrast */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ffcc00; /* Yellow for headings */
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: #dcdcdc;
+}
+
+.info-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* .container {
+    border-radius: 5px;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+    padding: 20px;
+  }
+  .contact{
+    
+  }
+   */

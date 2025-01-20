@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23252a;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main.customer-login,
+.main.admin-login {
+    position: relative;
+    width: 380px;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.main.customer-login h1,
+.main.admin-login h1 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+}
+
+.item-icon {
+    display: flex;
+    align-items: center;
+    background: #222;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid #8f8f8f;
+}
+
+.item-icon .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background: #8f8f8f;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.item-icon input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    flex: 1;
+    font-size: 1em;
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item-icon input::placeholder {
+    color: #8f8f8f;
+}
+
+.item-icon input:focus {
+    border-color: #45f3ff;
+    background: #333;
+}
+
+.error-message {
+    color: #ff6b6b;
+    font-size: 0.8em;
+    text-align: left;
+    margin: -10px 0 10px;
+    padding-left: 10px;
+}
+
+button {
+    background: #45f3ff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: #1c1c1c;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+
+button:disabled {
+    background: #8f8f8f;
+    cursor: not-allowed;
+}
+
+.new-user-register,
+.sign-up {
+    color: #8f8f8f;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.new-user-register .sign-up,
+.sign-up {
+    color: #45f3ff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.new-user-register .sign-up:hover,
+.sign-up:hover {
+    color: #fff;
+}
+
+
+/* .admin-login {
+    width: 40%;
+    margin: 0 auto;
+    box-shadow: rgb(109 109 125 / 28%) 0px 4px 7px 12px;
+    text-align: center;
+    padding: 20px;
+} */

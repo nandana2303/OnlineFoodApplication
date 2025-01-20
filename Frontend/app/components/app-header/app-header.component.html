@@ -1,0 +1,58 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container-fluid">
+    <!-- Logo -->
+    <a class="navbar-brand" href="#">
+      <img src="../../../assets/Images/Taste_of_Home_Logo.jpg" alt="Logo" width="90" height="60">
+      <span class="brand-name" style="margin-left: 2rem;">Food System</span>
+    </a>
+    <!-- Toggler for Mobile View -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- Home Link -->
+        <li class="nav-item mx-3">
+          <a class="nav-link" [class.active]="url === '/'" (click)="gotourl('')">Home</a>
+        </li>
+        <!-- About Us Link -->
+        <li class="nav-item mx-3">
+          <a class="nav-link" [class.active]="url === '/about-us'" (click)="gotourl('about-us')">About Us</a>
+        </li>
+        <!-- Customer Login -->
+        <li class="nav-item mx-3">
+          <a class="nav-link" [class.active]="url === '/customer-login'" (click)="gotourl('customer-login')">Customer Login</a>
+        </li>
+        <!-- Admin Login -->
+        <li class="nav-item mx-3">
+          <a class="nav-link" [class.active]="url === '/admin-login'" (click)="gotourl('admin-login')">Admin Login</a>
+        </li>
+        <!-- Contact Us -->
+        <li class="nav-item mx-3">
+          <a class="nav-link" [class.active]="url === '/contact-us'" (click)="gotourl('contact-us')">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+<!-- <div class="main">
+    <div><img  src="../../../assets/Images/logo1.png" width="10%" height="90%"></div>
+    <div (click)="gotourl('')" [class.selected]="url === '/'">Home</div>
+    <div (click)="gotourl('about-us')" [class.selected]="url === '/about-us'">AboutUs</div> -->
+    <!-- <div (click)="gotourl('client-register')"  [class.selected]="url === '/client-register'">Register</div> -->
+    <!-- <div (click)="gotourl('customer-login')" [class.selected]="url === '/customer-login'">CustomerLogin</div>
+    <div (click)="gotourl('admin-login')" [class.selected]="url === '/admin-login'">AdminLogin</div>
+    <div (click)="gotourl('contact-us')" [class.selected]="url === '/contact-us'">ContactUs</div>
+</div> -->

@@ -1,0 +1,16 @@
+h1 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+img {
+    width: 100vw;
+    height: 400px;
+}
+#exploreMenuSection img {
+    height: 203px;
+}
+.centered {
+    
+    display: flex;
+    justify-content: center;
+}

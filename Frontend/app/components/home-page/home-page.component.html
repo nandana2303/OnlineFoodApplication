@@ -1,0 +1,140 @@
+
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../assets/Images/momoes.jpg" class="d-block w-100" alt="..." style="height: 300px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/Images/chinese.jpg" class="d-block w-100" alt="..." style="height: 300px; object-fit: cover;">
+    </div>
+    <div class="carousel-item">
+      <img src="../assets/Images/pizza.jpg" class="d-block w-100" alt="..." style="height: 300px; object-fit: cover;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<h1 class="centered" style="color: #e91e63; font-style: italic; font-weight: bolder; font-size: 1.5rem; margin-top: 2rem; text-align: center; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); letter-spacing: 1px; transition: transform 0.3s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'; this.style.color='#f44336'; this.style.textShadow='4px 4px 8px rgba(0, 0, 0, 0.3)'" onmouseout="this.style.transform='scale(1)'; this.style.color='#e91e63'; this.style.textShadow='2px 2px 4px rgba(0, 0, 0, 0.2)'">
+  🌟 Taste of Home 🌟 – Bringing the flavors of comfort and love right to your doorstep!
+</h1>
+<!-- <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img [src]="images[0]" >
+      </div>
+      
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img [src]="images[1]">
+      </div>
+     
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="wrapper">
+        <img [src]="images[2]" >
+      </div>
+      
+    </ng-template>
+    
+  </ngb-carousel> -->
+  <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="menu-section-heading">Explore Products</h2>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+                <div class="shadow menu-item-card p-3 mb-3">
+                    <img src="../../../assets/Images/sandwich1.jpg" class="menu-item-image w-100" />
+                    <h1 class="menu-card-title">Sandwich</h1>
+                </div>
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+              <div class="shadow menu-item-card p-3 mb-3">
+                  <img src="../../../assets/Images/veg birayani.jpg" class="menu-item-image w-100" />
+                  <h1 class="menu-card-title">Veg</h1>
+              </div>
+
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+            <div class="shadow menu-item-card p-3 mb-3">
+                <img src="../../../assets/Images/nonveg.jpg" class="menu-item-image w-100" />
+                <h1 class="menu-card-title">Non Veg</h1>
+            </div>
+
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+          <div class="shadow menu-item-card p-3 mb-3">
+              <img src="../../../assets/Images/brownie.jpg" class="menu-item-image w-100" />
+              <h1 class="menu-card-title">Deserts</h1>
+
+          </div>
+
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+        <div class="shadow menu-item-card p-3 mb-3">
+            <img src="../../../assets/Images/chinese1.jpg" class="menu-item-image w-100" />
+            <h1 class="menu-card-title">Chinese</h1>
+        </div>
+
+    </div>
+
+    <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+      <div class="shadow menu-item-card p-3 mb-3">
+          <img src="../../../assets/Images/pizza2.jpg" class="menu-item-image w-100" />
+          <h1 class="menu-card-title">Pizza</h1>
+      </div>
+
+  </div>
+
+  <div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+    <div class="shadow menu-item-card p-3 mb-3">
+        <img src="../../../assets/Images/Burger1.jpg" class="menu-item-image w-100" />
+        <h1 class="menu-card-title">Burger</h1>
+    </div>
+
+</div>
+
+<div class="col-12 col-md-6 col-lg-3 pointer" (click)="gotoLogin()">
+  <div class="shadow menu-item-card p-3 mb-3">
+      <img src="../../../assets/Images/momoes.jpg" class="menu-item-image w-100" />
+      <h1 class="menu-card-title">Momoes</h1>
+  </div>
+
+</div>
+ </div>
+
+</div>
+  </div>
+
+<div class="footer-section pt-5 pb-5">
+  <div class="container">
+    <div class="centered">
+      <div class="row">
+          <div class="col-12 text-center">
+            
+              <img src="../../../assets/Images/FooterImage.avif" class="food-munch-logo" />
+              <h1 class="footer-section-mail-id"></h1>
+              <p class="footer-section-address">
+               123 ,Main Street,Thane,Maharashtra
+              </p>
+          </div>
+      </div>
+   
+  </div>
+</div>
+</div>
